@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="IT Services Freetown & Mobile Repair HTML5 Template"/>
+<meta name="keywords" content="computer repair service, mobile repair, Camera repair, glass repair, laptop repair, electronic repair, sierra leone, freetown, computer repair freetown, repair shop"/>
+<meta name="author" content="Ryan Josiah Stewart"/>
+
+<!-- Page Title -->
+<title>IT Services</title>
+
+<!-- Favicon and Touch Icons -->
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+
+<!-- Stylesheet -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/javascript-plugins-bundle.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!-- CSS | menuzord megamenu skins -->
+<link href="assets/dist/js/menuzord/css/menuzord.css" rel="stylesheet"/>
+
+<!-- CSS | timeline -->
+<link href="assets/dist/js/timeline-cp-responsive-vertical/timeline-cp-responsive-vertical.css" rel="stylesheet" type="text/css">
+
+<!-- CSS | Main style file -->
+<link href="assets/dist/css/style-main.css" rel="stylesheet" type="text/css">
+<link id="menuzord-menu-skins" href="assets/dist/js/menuzord/css/skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+
+<!-- CSS | Responsive media queries -->
+<link href="assets/dist/css/responsive.css" rel="stylesheet" type="text/css">
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+
+<!-- CSS | Theme Color -->
+<link href="assets/dist/css/colors/theme-skin-color-set1.css" rel="stylesheet" type="text/css">
+
+<!-- external javascripts -->
+<script src="assets/dist/js/jquery.js"></script>
+<script src="assets/dist/js/jquery.js"></script>
+<script src="assets/dist/js/bootstrap.min.js"></script>
+<script src="assets/dist/js/javascript-plugins-bundle.js"></script>
+<script src="assets/dist/js/menuzord/js/menuzord.js"></script>
+
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<style>
+    /* green */
+.menuzord.green .menuzord-menu > li.active > a, 
+.menuzord.green .menuzord-menu > li:hover > a, 
+.menuzord.green .menuzord-menu ul.dropdown li:hover > a{ 
+	background: #ff0000;
+	color: #fff;
+}
+
+/*---Side button for Services Details*/
+.side-button-container {
+  display: flex;
+  align-items: center;
+}
+
+.side-button {
+  margin-left: 10px; 
+  padding: 10px 15px;
+  background-color: #040e40; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.side-button:hover {
+  background-color: #ff0000;
+}
+
+      .footer{
+    background-image: url("images/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  /*--POS Image Animate CSS--*/
+@keyframes shake {
+    0%, 100% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+  }
+  #animated-image {
+    animation: shake 4s infinite;
+  }
+
+  .pos-system {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #040e40;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Hover effect */
+  .pos-system:hover {
+    background-color: #ff0000;
+  }
+  
+  p{
+      color: #040e40;
+      text-align: left;
+  }
+  
+  /*----Floating Social Icons----*/
+
+.social-icons-container {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999; 
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #040e40;
+    color: white;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: translateY(20px);
+}
+
+
+.notification-dot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -5px; /* Adjust this value to align the dot precisely */
+  transform: translateY(-50%);
+  opacity: 0; /* Initially hidden */
+  animation: waveBlink 1s infinite;
+}
+
+@keyframes waveBlink {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+h5{
+    text-align: left;
+}
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  
+  
+  
+  
+  
+  
+ .table-of-contents {
+    display: flex;
+    flex-wrap: wrap; /* Allow columns to wrap to the next row on smaller screens */
+    justify-content: space-between;
+    background-color: #36454F;
+    color: #fff;
+    padding: 20px;
+}
+
+.column {
+    width: calc(33.33% - 10px);
+    padding: 10px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.column a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.column a:hover {
+    text-decoration: underline;
+    color: #ff0000;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 765px) {
+    .table-of-contents {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+    .column {
+        width: 100%; /* Full width for each column on smaller screens */
+        margin-bottom: 10px; /* Add spacing between columns */
+    }
+}
+
+  
+  
+  
+  
+</style>
+</head>
+<body class="container-1340px">
+    <div class="social-icons-container">
+    <a href="https://www.facebook.com/itservicefreetown" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <!--<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>-->
+    <a href="https://www.instagram.com/itservicesfreetown/" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@itservicesfreetown" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/channel/UCWyQ6_Pu056pKgDp-8YUS2g?sub_confirmation=1" class="social-icon"><i class="fab fa-youtube"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+	<!-- Header -->
+<header id="header" class="header header-layout-type-header-2rows">
+	    <div class="fade-in"></div>
+		<div class="header-top ">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-auto header-top-left align-self-center text-center text-xl-left">
+						<ul class="element contact-info">
+							<li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> <a href="tel:+23233399391"> +232 33 399391</a></li>
+							<li class="contact-email"><i class="fa fa-envelope-o font-icon sm-display-block"></i><a href="mailto:support@itservicesfreetown.com">support@itservicesfreetown.com</a></li>
+							<li class="contact-address"><i class="fa fa-map-o font-icon sm-display-block"></i> West Freetown, Sierra Leone</li>
+						</ul>
+					</div>
+	<!--				<div class="col-xl-auto ml-xl-auto header-top-right align-self-center text-center text-xl-right">
+						<div class="element">
+							<ul class="header-top-nav list-inline">
+								<li class="menu-item"><a title="Home" class="menu-item-link" href="index.html"><strong>Home</strong></a></li>
+								<li class="menu-item"><a title="Home" class="menu-item-link" href="#"><strong>Cart</strong></a></li>
+								<li class="menu-item"><a title="Home" class="menu-item-link" href="page-contact.htm"><strong>Contact Us</strong></a></li>
+								<li><a href="https://itservicesfreetown.000webhostapp.com/phpBB3/index.php">Join Our Community</a></li>
+							</ul>
+						</div>
+					</div>   -->
+				</div>
+			</div>
+		</div>
+	<div class="header-nav">
+			<div class="header-nav-wrapper navbar-scrolltofixed green">
+				<div class="menuzord-container header-nav-container green ">
+					<div class="container position-relative">
+						<div class="row">
+							<div class="col">
+								<div class="row header-nav-col-row">
+									<div class="col-sm-auto align-self-center">
+										<a class="menuzord-brand site-brand" href="index.html">
+											<img class="logo-default logo-1x" src="images/logo.gif" alt="Logo" width="158" height="50">
+											<img class="logo-default logo-2x retina" src="images/logo.gif" alt="Logo" width="316" height="100">
+										</a>
+									</div>
+									<div class="col-sm-auto ml-auto pr-0 align-self-center">
+										<nav id="top-primary-nav" class="menuzord green" data-effect="fade" data-animation="none" data-align="right">
+											<ul id="main-nav" class="menuzord-menu">
+												<li class="active"><a href="index.html">Home</a></li>
+												<li><a href="about.html">About</a></li>
+											
+												<li><a href="#">Media</a>
+													<ul class="dropdown">
+														<li><a href="gallery.html">Gallery</a></li>
+														<li><a href="team.html">Team</a></li>
+														<!--<li><a href="page-team-details.html">Team Details</a></li>-->
+													</ul>
+												</li>
+												<li><a href="#">Services</a>
+												<ul class="dropdown">
+														<li><a href="services.html">Our Services</a></li>
+														<li><a href="faq.html">FAQ</a></li>
+													</ul>
+												</li>
+												<li><a href="news.html">Blog</a>
+												<!--	<ul class="dropdown">
+														<li><a href="news-grid.html">News Grid</a></li>
+														<li><a href="news-details.html">News Details</a></li>
+													</ul>-->
+												</li>
+												<li><a href="contact.html">Contact</a></li>
+												<li> <a href="https://itservicesfreetown.com/forum/" target="_blank">Join Our Community</a><div class="notification-dot"></div></li>
+
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="row d-block d-xl-none">
+									 <div class="col-12">
+										<nav style="color:#040e40;" id="top-primary-nav-clone" class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive" data-effect="slide" data-animation="none" data-align="right">
+										 <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+										 </ul>
+										</nav>
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Start main-content -->
+	<div class="main-content">
+		<!-- Section: inner-header -->
+		<section class="page-title divider layer-overlay overlay-dark-8 section-typo-light bg-img-center" data-tm-bg-img="images/computer-repair.jpg">
+			<div class="container pt-90 pb-90">
+				<!-- Section Content -->
+				<div class="section-content">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="title text-white">Ous Service</h2>
+							<nav role="navigation" class="breadcrumb-trail breadcrumbs">
+								<div class="breadcrumbs">
+									<span class="trail-item trail-begin">
+										<a href="index.html"><span>Home</span></a>
+									</span>
+									<span><i class="fa fa-angle-right"></i></span>
+									<span class="trail-item"><a href="#"><span>Pages</span></a></span>
+									<span><i class="fa fa-angle-right"></i></span>
+									<span class="trail-item trail-end active">Service Details</span>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section: Service details -->
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+							    	<div class="anchor-list">
+							    <h3>Easy Service Navigation</h3>
+							    
+                                <div class="table-of-contents">
+    <div class="column left">
+        <ul>
+            <li><a href="#laptop-pc-repair">> Laptop/PC Repair</a></li>
+            <li><a href="#mobile-repair">> Mobile Repair</a></li>
+            <li><a href="#data-backup-recovery">> Data Backup/Recovery</a></li>
+            <li><a href="#mobile-unlock">> Mobile Unlock</a></li>
+        </ul>
+    </div>
+    <div class="column center">
+        <ul>
+            <li><a href="#hardware-update">> Hardware Update</a></li>
+            <li><a href="#web-development">> Web Development</a></li>
+            <li><a href="#event-decor">> Event Décor</a></li>
+            <li><a href="#cake-making">> Cake Making</a></li>
+        </ul>
+    </div>
+    <div class="column right">
+        <ul>
+            <li><a href="#pos-software-management">> POS Software Management</a></li>
+            <!-- Add more items as needed -->
+        </ul>
+    </div>
+</div> <br>
+
+
+
+
+							</div>
+								<div class="col-md-12">
+									<img alt="" src="images/pc-repair.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="laptop-pc-repair"><a href="page-contact.html">Laptop/PC Repair</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">At our laptop repair center, we understand the importance of having a fully functional laptop that meets your computing needs. Whether you rely on it for work, education, or personal use, we are here to provide efficient and reliable repair solutions for all laptop-related issues. Our team of skilled technicians possesses extensive knowledge and expertise in diagnosing and resolving a wide range of laptop problems, ensuring your device is back in optimal condition as quickly as possible.</p> <br>
+
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><strong style="font-weight: bold;">Diagnosis:</strong> 
+										Upon receiving your laptop, our technicians begin with a thorough diagnosis to identify the root cause of the problem. We utilize advanced diagnostic tools and techniques to assess both hardware and software components, including the motherboard, memory, hard drive, keyboard, display, ports, and connectivity. This comprehensive evaluation enables us to determine the specific issues affecting your laptop's performance accurately. <br><br>
+										
+										<strong style="font-weight: bold;">Hardware Repairs:</strong> 
+										We specialize in handling a broad spectrum of hardware repairs, addressing issues that may arise from regular wear and tear, accidental damage, or manufacturing defects. Our experienced technicians are proficient in repairing or replacing faulty components, such as broken screens, malfunctioning keyboards, faulty power supplies, damaged motherboards, overheating issues, and defective ports. We source high-quality replacement parts from reputable suppliers to ensure optimal performance and longevity. <br><br>
+										
+										<strong style="font-weight: bold;">Software Troubleshooting and Optimization:</strong>
+										In addition to hardware repairs, we also provide comprehensive software troubleshooting and optimization services. Our skilled technicians can diagnose and resolve various software-related issues, including operating system errors, driver conflicts, malware infections, slow performance, frequent crashes, and software compatibility problems. We utilize industry-standard tools and techniques to identify and eliminate software conflicts, optimize system performance, and ensure a smooth computing experience. <br><br>
+										
+										<strong style="font-weight: bold;">Data Recovery and Backup Solutions: </strong> 
+										Data loss can be a distressing experience, but our laptop repair services include professional data recovery solutions. In cases of accidental deletion, hard drive failure, or software corruption, our technicians employ advanced data recovery techniques to retrieve your valuable files, photos, documents, and other critical data. Additionally, we provide guidance and assistance in setting up reliable backup systems to prevent future data loss scenarios. <br><br>
+										
+										<strong style="font-weight: bold;">Transparent Pricing and Timely Service:</strong>
+										We believe in transparency when it comes to pricing and service timelines. Upon diagnosing your laptop, we provide a detailed and itemized cost estimate for the repairs required. Our rates are competitive, and we only charge for the necessary repairs and replacement parts. We strive to complete the repairs as quickly as possible, ensuring minimal downtime for our customers. <br><br>
+										
+										<strong style="font-weight: bold;">Customer Satisfaction Guarantee:</strong>
+										We take pride in delivering exceptional customer service and satisfaction. Our dedicated team of technicians is committed to resolving your laptop issues promptly and effectively. We stand behind our repairs with a satisfaction guarantee, ensuring that you receive a fully functional laptop upon completion of our services. Should any issues arise after the repair, we are always ready to address them promptly and make things right.</p> 
+										<h5>Immediate self fix you can try for basic computer issues.</h5>
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Restart your PC</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Check power and connections</i></li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Update drivers</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Run antivirus and malware scans.</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Free up disk space</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Check for software conflicts</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Restore system settings</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Seek professional assistance</li>
+										<p style="color: #040e40; text-align: left;"> <strong style="font-weight: bold;">NOTE: </strong> Remember, these steps are general recommendations and may not solve all PC issues. The specific problem you're facing may require a more tailored solution or expert assistance.</p>
+									</ul>
+				
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+									<img alt="" src="images/phone-repair.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+									    <a href="contact"></a>
+										<h3 class="mt-20 mb-10" id="mobile-repair"><a href="contact.html">Mobile Repair</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"> Our mobile repair service provide efficient and reliable repair services to ensure your mobile device is back in optimal condition promptly. Our team of skilled technicians possesses extensive knowledge and expertise in diagnosing and resolving a wide range of mobile phone issues, guaranteeing a seamless and hassle-free experience.</p> 
+
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;"><strong style="font-style: italic;">Mobile devices,</strong> 
+										including smartphones and tablets, can encounter various problems that can impact their performance and functionality. Here are some common mobile device problems and their possible causes that we can fix: <br>
+										<strong style="font-weight: bold;">Battery Drainage:</strong> 
+										<ul style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">
+										<li>Causes: Excessive usage, running power-hungry apps, background processes, outdated software, improper charging habits, battery age or degradation.</li>
+										<strong style="font-weight: bold;">Screen Damage:</strong> 
+										<li>Causes: Accidental drops or impacts, insufficient screen protection, inadequate handling or storage.</li>
+										<strong style="font-weight: bold;">Overheating:</strong> 
+										<li>Causes: Intensive usage (e.g., gaming or resource-demanding apps), software glitches, background processes, inadequate ventilation, exposure to high temperatures.</li>
+										<strong style="font-weight: bold;">Slow Performance:</strong> 
+										<li>Causes: Insufficient storage space, excessive background processes, outdated software, app cache accumulation, malware or viruses, insufficient RAM or processing power.</li>
+										<strong style="font-weight: bold;">Connectivity Issues:</strong> 
+										<li>Causes: Weak Wi-Fi or cellular signals, network congestion, misconfigured settings, software bugs, hardware issues with antennas or radios.</li>
+										<strong style="font-weight: bold;">Camera Malfunctions:</strong> 
+										<li>Causes: Software glitches, outdated camera app, insufficient storage space, physical damage to the camera lens, faulty camera sensor.</li>
+										<strong style="font-weight: bold;">App Crashes:</strong> 
+										<li>Causes: Incompatible software versions, corrupted app files, insufficient RAM or processing power, software conflicts, outdated software or firmware.</li>
+										<strong style="font-weight: bold;">Unresponsive Touchscreen:</strong> 
+										<li>Causes: Physical damage to the screen or digitizer, water damage, software glitches, unresponsive firmware, faulty touch sensors.</li>
+										<strong style="font-weight: bold;">Storage Problems:</strong> 
+										<li>Causes: Insufficient storage space, accumulation of unnecessary files or app data, fragmented storage, software issues affecting file management.</li>
+										<strong style="font-weight: bold;">Charging Issues</strong> 
+										<li>Causes: Damaged charging cable or adapter, faulty charging port, incompatible charger, software issues affecting charging behavior, battery-related problems.</li>
+										<strong style="font-weight: bold;">Software Glitches:</strong> 
+										<li>Causes: Causes: Incomplete or failed software updates, incompatible app versions, corrupt system files, malware or viruses, conflicts between apps or system processes.</li>
+										<strong style="font-weight: bold;">Network and Signal Problems:</strong> 
+										<li>Causes: Weak network coverage, network congestion, SIM card issues, software bugs, outdated firmware, antenna or radio hardware problems.</li>
+										<strong style="font-weight: bold;">Audio Issues:</strong> 
+										<li>Causes: Faulty speakers or headphones, software glitches affecting audio output, misconfigured sound settings, physical damage to audio components.</li>
+										<strong style="font-weight: bold;">Random Restarts or Freezing:</strong> 
+										<li>Causes: Overheating, software glitches, incompatible apps or firmware, insufficient RAM or processing power, hardware issues with the motherboard or power supply.</li>
+										<p style="color: #040e40; text-align: left;"> <strong style="font-weight: bold;">NOTE: </strong> It's important to note that these causes are general and may vary depending on the specific device model, software version, and user behavior. Resolving these problems often involves troubleshooting steps such as software updates, app reinstalls, cache clearance, resetting settings, or seeking professional assistance from authorized service centers.</p>
+									</ul>
+										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+									<img alt="" src="images/data-bk-rc.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="data-backup-recovery"><a href="contact.html">Data Backup/Recovery</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In today's digital age, our lives are intertwined with technology, and our valuable data resides on our computers. From personal photos and documents to business records and important files, the data we store is invaluable. That's why, as a trusted computer repair shop, we want to highlight the importance of data backup and recovery. By implementing proper backup strategies, you can protect yourself from data loss disasters and ensure the safety and continuity of your digital world.</p> 
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Below highlights the benefits of doing data backup and data recovery with <a href="index.html">IT Services Freetown.</a></p>
+									
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Protecting Against Accidental Loss</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Guarding Against Hardware Failure</i></li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Recovery from Software Issues</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Ransomware and Malware Protection</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Business Continuity</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Peace of Mind:</li>
+										<p  style="color: #040e40; text-align: left;"> <strong style="font-weight: bold;">NOTE: </strong>Data backup and recovery are not optional but essential practices in today's technology-driven world. As a computer repair shop, we strongly advocate for implementing proper backup strategies to safeguard your digital life. Whether you are an individual user or a business owner, protecting your data through regular backups can prevent devastating losses, maintain business continuity, and provide peace of mind. Don't wait until it's too late; start backing up your data today and ensure that your digital world remains secure and resilient. Remember, we are here to assist you with any data recovery needs or backup solutions to keep your information safe.</p>								
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+									<img alt="" src="images/mobile-unlock1.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="mobile-unlock"><a href="contact.html">Mobile Unlock</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">In the dynamic world of mobile devices, unlocking your phone offers freedom and flexibility to choose your preferred network carrier or use your device internationally. As a trusted provider of phone unlocking services, we pride ourselves on delivering professional and reliable solutions to unlock your phone securely. Our professional software employ industry-standard practices to ensure a seamless and hassle-free unlocking process while maintaining the integrity of your device.</p> 
+									<h5 class="mt-20 mb-10"><a href="#">Why Unlock Your Phone With IT Services Freetown?</a></h5>
+									
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Freedom to Choose Your Network Carrier</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> International Travel</i></li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Increased Resale Values</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Affordable</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Flexibility for Dual SIM Usage </li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Device Compatibility </li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Customization and Personalization</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Access to Software Updates</li>
+							
+										<p  style="color: #040e40; text-align: left;"> <strong style="font-weight: bold;">NOTE: </strong>Unlocking your phone empowers you to make choices that suit your needs and preferences. It provides the flexibility to switch carriers, use local SIM cards while traveling, and personalize your device. Consider unlocking your phone to unlock the full potential of your mobile experience.</p>
+
+									<!--	<h6 class="mt-20 mb-10"><a href="#">Brands Unlock</a></h6>
+										<div class="image-container">
+											<div class="image-box">
+											  <img src="images/apple-logo.png" alt="Image 1">
+											</div>
+											<div class="image-box">
+											  <img src="images/samsung-logo1.png" alt="Image 2">
+											</div>
+											<div class="image-box">
+											  <img src="images/huawei-logo.png" alt="Image 3">
+											</div>
+											<div class="image-box">
+											  <img src="images/lg-logo.png" alt="Image 3">
+											</div>
+											<!-- Add more <div class="image-box"> elements for additional images 
+										  </div>-->
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+									<img alt="" src="images/hardware-update.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="hardware-update"><a href="contact.html">Hardware Update</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Computer hardware updates are of utmost importance as it play a pivotal role in enhancing overall system performance and user experience. Keeping hardware components up-to-date ensures that computers can leverage the latest technological advancements, which often translate to faster processing speeds, improved graphics capabilities, and increased efficiency. Upgrading hardware also ensures compatibility with the latest software applications, preventing compatibility issues and security vulnerabilities. Moreover, updated hardware can prolong the lifespan of the computer, reducing the need for frequent replacements and saving costs in the long run. By staying current with hardware updates, users can optimize their computing power, stay ahead in a rapidly evolving digital landscape, and enjoy a seamless and satisfying computing experience.</p> 
+									<h5 class="mt-20 mb-10"><a href="#">There are several benefits for keeping your computer up to date with hardware update</a></h5>
+									
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Improved Performance</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Enhanced Graphics and Gaming</i></li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Increased Productivity</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Better Multitasking</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Future-Proofing </li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Improved Energy Efficiency </li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Faster Data Transfer</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Enhanced Security</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Longer Lifespan</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Better VR and AR Experiences</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Improved Connectivity</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Compatibility with Modern Peripherals</li>
+							
+										<p  style="color: #040e40; text-align: left;"> Overall, hardware updates are essential for unlocking the full potential of your computer, whether for work, gaming, creative tasks, or simply ensuring a smooth and enjoyable computing experience.</p>
+
+									<!--	<h6 class="mt-20 mb-10"><a href="#">Brands Unlock</a></h6>
+										<div class="image-container">
+											<div class="image-box">
+											  <img src="images/apple-logo.png" alt="Image 1">
+											</div>
+											<div class="image-box">
+											  <img src="images/samsung-logo1.png" alt="Image 2">
+											</div>
+											<div class="image-box">
+											  <img src="images/huawei-logo.png" alt="Image 3">
+											</div>
+											<div class="image-box">
+											  <img src="images/lg-logo.png" alt="Image 3">
+											</div>
+											<!-- Add more <div class="image-box"> elements for additional images 
+										  </div>-->
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+								    <div style="position: relative; width: 100%; height: 0; padding-top: 66.6667%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFpyd1_u94&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFpyd1_u94&#x2F;watch?utm_content=DAFpyd1_u94&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Design</a> by Ryan Stewart
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="web-development"><a href="contact.html">Web Development</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Are you looking to build a strong online presence for your business or enhance your existing website? Look no further! Our expert team of web developers is here to transform your vision into a captivating and functional reality.<br> At <a href="index.html">IT Services Freetown</a>, we deliver cutting-edge web development services tailored to meet the unique needs of our clients. Whether you're a small business owner or a large enterprise, we have the skills and experience to create a website that not only looks stunning but also performs seamlessly across all devices.</p> 
+									<h5 class="mt-20 mb-10"><a href="#">Why choose us? Here's what sets apart from the rest:</a></h5>
+									
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Customized Solutions</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> User-Centric Designs</i></li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Mobile-First Approach</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Search Engine Optimization (SEO)</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Cutting-Edge Technology </li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Timely Delivery </li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Transparent Communication</li>
+										
+										<h5 class="mt-20 mb-10"><a href="#">Tecnologies we use for web development</a></h5>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> HTML (Hypertext Markup Language)</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> CSS (Cascading Style Sheets)</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> JavaScript</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Server-Side Languages</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> PHP</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Node.js</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Databases</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> MySQL</li>
+										<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Bootstrap</li>
+							
+										<p  style="color: #040e40; text-align: left;"> Whether you need an e-commerce website, a portfolio site, a corporate platform, or any other custom web solution, we has got you covered. Our track record of satisfied clients speaks for itself!</p>
+
+									<!--	<h6 class="mt-20 mb-10"><a href="#">Brands Unlock</a></h6>
+										<div class="image-container">
+											<div class="image-box">
+											  <img src="images/apple-logo.png" alt="Image 1">
+											</div>
+											<div class="image-box">
+											  <img src="images/samsung-logo1.png" alt="Image 2">
+											</div>
+											<div class="image-box">
+											  <img src="images/huawei-logo.png" alt="Image 3">
+											</div>
+											<div class="image-box">
+											  <img src="images/lg-logo.png" alt="Image 3">
+											</div>
+											<!-- Add more <div class="image-box"> elements for additional images 
+										  </div>-->
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+									<img alt="" src="images/event-decor.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="event-decor"><a href="contact.html">Event Décor</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Transform your special occasion into a breathtaking and unforgettable experience with our exquisite event décor services. Our team of talented and creative designers specializes in bringing your vision to life, turning any venue into a captivating masterpiece. From intimate gatherings to grand celebrations, we are dedicated to curating an atmosphere that perfectly reflects your style and theme.</p> 
+									<h5 class="mt-20 mb-10"><a href="#">Our Event Décor Services Include:</a></h5>
+									
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+										<h6 <li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> <strong>Theme Creation and Conceptualization</strong></li></h6>
+										<p>We work closely with you to understand your event's theme and desired ambiance. Our experts then conceptualize a unique and cohesive design plan that encompasses every aspect of the event.</p>
+										<h6 <li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i><strong> Venue Transformation</strong></i></li></h6>
+										<p>Whether it's a ballroom, outdoor garden, rustic barn, or a blank canvas space, we have the expertise to completely transform the venue to align with your chosen theme. Our services encompass lighting, drapery, furniture, props, and more.</p>
+										<h6 <li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> <strong> Floral Arrangements</strong></li></h6>
+										<p>Our skilled floral designers craft stunning arrangements using a variety of blooms and greenery to add a touch of elegance and natural beauty to your event.</p>
+										<h6 <li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Tablescapes and Centerpieces</li></h6>
+										<p> We create captivating table settings with carefully curated centerpieces, linens, tableware, and place settings that harmonize with the overall décor.</p>
+									<h6	<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Lighting Design </li></h6>
+									<p>Our lighting experts utilize innovative lighting techniques to set the mood and enhance the atmosphere, from soft and romantic to vibrant and energetic.</p>
+									<h6	<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Backdrops and Photo Booths </li></h6>
+									<p>Design custom backdrops and photo booth setups that serve as picturesque spots for capturing memorable moments</p>
+									<h6	<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Custom Signage and Graphics</li></h6>
+									<p>We design and produce personalized signage, banners, and graphics that add a personal touch and reinforce the event's theme.</p>
+									<h6>	<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Furniture Rentals</li></h6>
+									<p>Choose from an extensive collection of stylish and comfortable furniture pieces that complement the overall design and offer your guests a comfortable seating experience</p>
+										<h6<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Thematic Props and Accessories</li></h6>
+										<p>From vintage to contemporary, our collection of thematic props and accessories enhances the visual storytelling of your event.</p>
+									<h6	<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Coordination and Setup</li></h6>
+									<p>Our team ensures flawless execution by handling the setup, arrangement, and coordination of all décor elements on the day of the event.</p>
+									<h6	<li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Budget Managemen</li></h6>
+									<p>We work within your budget constraints to deliver a stunning and memorable event that exceeds your expectations.</p>
+										<h6 <li class="text-theme-colored1"><i class="fa fa-check-circle text-theme-colored1 mr-10"></i> Customization and Personalization</li></h6>
+										<p>Tailoring every detail to your preferences, we focus on the unique aspects of your event, ensuring a one-of-a-kind experience.</p>
+										
+							
+										<p  style="color: #040e40; text-align: left;"> From weddings and corporate functions to milestone celebrations and themed parties, our event décor services are designed to make your vision come to life and leave a lasting impression on your guests. Let us transform your event into an enchanting and captivating masterpiece.<br>
+
+                                            Contact us today to discuss your event décor needs and embark on a journey of creative collaboration and unparalleled beauty.</p>
+
+									<!--	<h6 class="mt-20 mb-10"><a href="#">Brands Unlock</a></h6>
+										<div class="image-container">
+											<div class="image-box">
+											  <img src="images/apple-logo.png" alt="Image 1">
+											</div>
+											<div class="image-box">
+											  <img src="images/samsung-logo1.png" alt="Image 2">
+											</div>
+											<div class="image-box">
+											  <img src="images/huawei-logo.png" alt="Image 3">
+											</div>
+											<div class="image-box">
+											  <img src="images/lg-logo.png" alt="Image 3">
+											</div>
+											<!-- Add more <div class="image-box"> elements for additional images 
+										  </div>-->
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div class="container pb-70">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-xs-12 col-sm-12 col-md-12 pull-left flip">
+							<div class="row">
+								<div class="col-md-12">
+									<img alt="" src="images/cake-making-detail.jpg" loading="lazy"/>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="side-button-container">
+										<h3 class="mt-20 mb-10" id="cake-making"><a href="contact.html">Cake Making</a></h3>
+									  <a href="contact.html">	<button class="side-button">BOOK</button></a>
+									  </div>
+									  <h5 class="mt-20 mb-10">Your Perfect Confection Awaits at Shirley's Décor</h5>
+									<p style="color: #040e40; text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 20px;">Dreams are crafted into delectable confections that tantalize your taste buds and ignite your imagination. Our cake making business is dedicated to turning your sweetest fantasies into mouthwatering reality, creating edible works of art that are as visually stunning as they are irresistibly delicious.</p> 
+									<p class="mt-20 mb-10">We invite you to immerse yourself in a world of decadent delights and artistic expression. Let us create a cake that not only gratifies your palate but also ignites your senses and adds a touch of magic to your celebrations. Your dream cake awaits – contact us today and let the enchantment begin!</p>
+									
+									<ul  class="list-unstyled mb-20" style="color: #040e40;">
+
+									<!--	<h6 class="mt-20 mb-10"><a href="#">Brands Unlock</a></h6>
+										<div class="image-container">
+											<div class="image-box">
+											  <img src="images/apple-logo.png" alt="Image 1">
+											</div>
+											<div class="image-box">
+											  <img src="images/samsung-logo1.png" alt="Image 2">
+											</div>
+											<div class="image-box">
+											  <img src="images/huawei-logo.png" alt="Image 3">
+											</div>
+											<div class="image-box">
+											  <img src="images/lg-logo.png" alt="Image 3">
+											</div>
+											<!-- Add more <div class="image-box"> elements for additional images 
+										  </div>-->
+									</ul>		
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+	<!-- end main-content -->
+	
+	
+	
+	
+<!-- POS Management Software Starts -->
+		<section class="bg-img-no-repeat bg-img-right" data-tm-bg-img="images/bg/bg-shape-bconsul2.png">
+			<div class="container pt-0">
+				<div class="section-content">
+					<div class="row">
+						<div class="col-sm-12 col-lg-6 col-md-12">
+							<img src="images/pos-mgt-system.png" class="attachment-full" alt="" id="animated-image" />
+						</div>
+                        						<!-- The modal (popup) -->
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="modal-image">
+                        </div>
+						<div class="col-xl-6 col-lg-6"> <br>
+							<h6 class="font-size-30" id="pos-software-management"><strong style="color: #ff0000;">POS</strong> Management Software</h6>
+							
+								<h5 style="text-align: left;">Modern tool to help your business succeed</h5>
+								<p>This is an inventory management system that includes a POS feature, enabling you to efficiently manage your sales, purchases, customers, invoices, and payment receipts. With this app, you can easily conduct transactions from any location and at any time. It’s the perfect solution whether you’re running a small business or a large enterprise, as it streamlines all aspects of inventory management, sales, and purchases within a single platform.</p>
+								<button class="pos-system">
+									<a href="page-contact.html" style="color: white;">Request Installation</a>
+								  </button>
+								<button class="pos-system">
+									<a href="https://posly.getstocky.com/login" style="color: white;"><strong style="color: red;">Live</strong> Demo</a>
+								  </button>
+								  
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- POS Management Software Ends -->	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Footer -->
+<footer id="footer" class="footer">
+		<div class="footer-widget-area">
+			<div class="container pt-90 pb-60">
+				<div class="row">
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="tm_widget_contact_info-1" class="split-nav-menu clearfix widget widget-contact-info clearfix mb-20">
+							<div class="tm-widget tm-widget-contact-info contact-info contact-info-style1  contact-icon-theme-colored1">
+								<div class="thumb">
+									<img alt="Logo" src="images/logo-white-bg.png">
+								</div>
+								<div class="description">West Freetown, Sierra Leone</div>
+							</div>
+						</div>
+						<div id="tm_widget_social_list_custom-1" class="split-nav-menu clearfix widget widget-social-list-custom clearfix">
+							<ul class="tm-widget tm-widget-social-list tm-widget-social-list-custom styled-icons  icon-dark  icon-rounded icon-theme-colored1 ">
+								<li><a class="social-link" href="#" ><i class="fa fa-facebook"></i></a></li>
+								<li><a class="social-link" href="#" ><i class="fa fa-twitter"></i></a></li>
+								<li><a class="social-link" href="#" ><i class="fa fa-youtube"></i></a></li>
+								<li><a class="social-link" href="#" ><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="tm_widget_blog_list-1" class="split-nav-menu clearfix widget widget-blog-list clearfix">
+							<h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored1">Latest News</h4>
+							<div class="tm-widget tm-widget-blog-list "> 
+								<!-- the loop -->
+								<article class="post media-post clearfix"> <a class="post-thumb" href="#"><img width="100" height="70" src="http://placehold.it/672x448" class="" alt="" /></a>
+									<div class="post-right">
+										<h6 class="post-title"> <a href="#"> Customer Focused </a> </h6>
+										<span class="post-date">
+										<time class="entry-date" datetime="2019-05-15T06:10:26+00:00">April 15, 2019</time>
+										</span> 
+									</div>
+								</article>
+								<article class="post media-post clearfix"> <a class="post-thumb" href="#"><img width="100" height="70" src="http://placehold.it/672x448" class="" alt="" /></a>
+									<div class="post-right">
+										<h6 class="post-title"> <a href="#"> POS System Software </a> </h6>
+										<span class="post-date">
+										<time class="entry-date" datetime="2019-07-15T06:10:26+00:00">June 15, 2019</time>
+										</span> 
+									</div>
+								</article>
+								<article class="post media-post clearfix"> <a class="post-thumb" href="#"><img width="100" height="70" src="http://placehold.it/672x448" class="" alt="" /></a>
+									<div class="post-right">
+										<h6 class="post-title"> <a href="#"> New tech on LCD </a> </h6>
+										<span class="post-date">
+										<time class="entry-date" datetime="2019-09-15T06:10:26+00:00">November 15, 2019</time>
+										</span> 
+									</div>
+								</article>
+								<!-- end of the loop --> 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="nav_menu-1" class="widget widget_nav_menu">
+							<h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored1">Services</h4>
+							<div class="menu-service-nav-menu-container">
+								<ul id="menu-service-nav-menu" class="menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20545"><a href="#services">Laptop Repair</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20546"><a href="#services">Desktop Repair</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20547"><a href="#services">Data Recovery</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20548"><a href="#services">Phone Unock</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20549"><a href="#services/">Mobile Repair</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20550"><a href="#services">and more</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="tm_widget_opening_hours_compressed-1" class="split-nav-menu clearfix widget widget-opening-hours-compressed clearfix">
+							<h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored1">Opening Hours</h4>
+							<ul class="tm-widget tm-widget-opening-hours tm-widget-opening-hours-compressed opening-hours border-dark">
+								<li class="clearfix"> <span>Monday - Saturday</span>
+									<div class="value">08.00 - 18.00</div>
+								</li>
+								<li class="clearfix"> <span>Wednesday</span>
+									<div class="value">08.00 - 18.00</div>
+								</li>
+								<li class="clearfix"> <span>Thursday - Friday</span>
+									<div class="value">08.00 - 18.00</div>
+								</li>
+								<li class="clearfix"> <span>Saturday</span>
+									<div class="value">08.00 - 17.00</div>
+								</li>
+								<li class="clearfix"> <span>Sunday</span>
+									<div class="value">Closed</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom" img="" alt="" src="images/bg1.jpg">
+				<div class="container">
+					<div class="row pt-20 pb-20">
+						<div class="col-sm-6">
+							<div class="footer-paragraph">
+								<p style="text-align: center; color: white;"> &copy;2023 IT Services Freetown. All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-paragraph text-right">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="assets/dist/js/custom.js"></script>
+
+
+</body>
+</html>

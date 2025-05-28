@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+
+<!-- Meta Tags -->
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="IT Services Freetown & Mobile Repair HTML5 Template"/>
+<meta name="keywords" content="computer repair service, mobile repair, Camera repair, glass repair, laptop repair, electronic repair, sierra leone, freetown, computer repair freetown, repair shop"/>
+<meta name="author" content="Ryan Josiah Stewart"/>
+
+<!-- Page Title -->
+<title>IT Services</title>
+
+<!-- Favicon and Touch Icons -->
+<link href="images/favicon.png" rel="shortcut icon" type="image/png">
+<link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+<link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+<link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+<link href="images/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144">
+
+<!-- Stylesheet -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/animate.min.css" rel="stylesheet" type="text/css">
+<link href="assets/dist/css/javascript-plugins-bundle.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!-- CSS | menuzord megamenu skins -->
+<link href="assets/dist/js/menuzord/css/menuzord.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<!-- CSS | timeline -->
+<link href="assets/dist/js/timeline-cp-responsive-vertical/timeline-cp-responsive-vertical.css" rel="stylesheet" type="text/css">
+
+<!-- CSS | Main style file -->
+<link href="assets/dist/css/style-main.css" rel="stylesheet" type="text/css">
+<link id="menuzord-menu-skins" href="assets/dist/js/menuzord/css/skins/menuzord-rounded-boxed.css" rel="stylesheet"/>
+
+<!-- CSS | Responsive media queries -->
+<link href="assets/dist/css/responsive.css" rel="stylesheet" type="text/css">
+<!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
+
+<!-- CSS | Theme Color -->
+<link href="assets/dist/css/colors/theme-skin-color-set1.css" rel="stylesheet" type="text/css">
+
+<!-- external javascripts -->
+<script src="assets/dist/js/jquery.js"></script>
+<script src="assets/dist/js/jquery.js"></script>
+<script src="assets/dist/js/bootstrap.min.js"></script>
+<script src="assets/dist/js/javascript-plugins-bundle.js"></script>
+<script src="assets/dist/js/menuzord/js/menuzord.js"></script>
+
+
+
+
+<!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
+
+
+<style>
+    /* green */
+.menuzord.green .menuzord-menu > li.active > a, 
+.menuzord.green .menuzord-menu > li:hover > a, 
+.menuzord.green .menuzord-menu ul.dropdown li:hover > a{ 
+	background: #ff0000;
+	color: #fff;
+}
+
+body p{
+    color: white;
+    text-align: left;
+}
+      .footer{
+    background-image: url("images/footer-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .privacy-policy{
+      text-align:center;
+      margin-top: -50px;
+      padding-right: -60%;
+  }
+  
+  /*----Floating Social Icons----*/
+
+.social-icons-container {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 9999; 
+}
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #040e40;
+    color: white;
+    transition: transform 0.3s;
+    border-radius: 50%;
+}
+
+.social-icon:hover {
+    transform: translateY(20px);
+}
+
+.notification-dot {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: -5px; /* Adjust this value to align the dot precisely */
+  transform: translateY(-50%);
+  opacity: 0; /* Initially hidden */
+  animation: waveBlink 1s infinite;
+}
+
+@keyframes waveBlink {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+
+#accordion{
+    margin: 100px auto;
+    width: 600px;
+}
+#accordion li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px;
+    border-radius: 4px;
+    background: #000000c9;
+    position: relative;
+}
+#accordion li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/faq-bg.png); 
+    opacity: 1%;
+    z-index: -1; 
+}
+#accordion li label {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+}
+#accordion li label span{
+    transform: rotate(90deg);
+    font-size: 22px;
+    color: white;
+}
+#accordion label + input[type="radio"]{
+    display: none;
+}
+#accordion .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+#accordion label + input[type="radio"]:checked + .content{
+    max-height: 400px
+}
+/* Media query for screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    #accordion {
+        width: 100%; 
+    }
+
+    #accordion li {
+        margin: 0; 
+    }
+
+    #accordion li label {
+        font-size: 16px; 
+    }
+
+    #accordion .content {
+        max-height: 0;
+    }
+
+    #accordion label + input[type="radio"]:checked + .content {
+        max-height: 100%; 
+    }
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+<body class="container-1340px">
+<div class="social-icons-container">
+    <a href="https://www.facebook.com/itservicefreetown" class="social-icon"><i class="fab fa-facebook"></i></a>
+    <!--<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>-->
+    <a href="https://www.instagram.com/itservicesfreetown/" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@itservicesfreetown" class="social-icon"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.youtube.com/channel/UCWyQ6_Pu056pKgDp-8YUS2g?sub_confirmation=1" class="social-icon"><i class="fab fa-youtube"></i></a>
+</div>
+<div id="wrapper" class="clearfix">
+	<!-- Header -->
+	<header id="header" class="header header-layout-type-header-2rows">
+	    <div class="fade-in"></div>
+		<div class="header-top ">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-auto header-top-left align-self-center text-center text-xl-left">
+						<ul class="element contact-info">
+							<li class="contact-phone"><i class="fa fa-phone font-icon sm-display-block"></i> <a href="tel:+23233399391"> +232 33 399391</a></li>
+							<li class="contact-email"><i class="fa fa-envelope-o font-icon sm-display-block"></i><a href="mailto:support@itservicesfreetown.com">support@itservicesfreetown.com</a></li>
+							<li class="contact-address"><i class="fa fa-map-o font-icon sm-display-block"></i> West Freetown, Sierra Leone</li>
+						</ul>
+					</div>
+	<!--				<div class="col-xl-auto ml-xl-auto header-top-right align-self-center text-center text-xl-right">
+						<div class="element">
+							<ul class="header-top-nav list-inline">
+								<li class="menu-item"><a title="Home" class="menu-item-link" href="index.html"><strong>Home</strong></a></li>
+								<li class="menu-item"><a title="Home" class="menu-item-link" href="#"><strong>Cart</strong></a></li>
+								<li class="menu-item"><a title="Home" class="menu-item-link" href="page-contact.htm"><strong>Contact Us</strong></a></li>
+								<li><a href="https://itservicesfreetown.000webhostapp.com/phpBB3/index.php">Join Our Community</a></li>
+							</ul>
+						</div>
+					</div>   -->
+				</div>
+			</div>
+		</div>
+		<div class="header-nav">
+			<div class="header-nav-wrapper navbar-scrolltofixed green">
+				<div class="menuzord-container header-nav-container green ">
+					<div class="container position-relative">
+						<div class="row">
+							<div class="col">
+								<div class="row header-nav-col-row">
+									<div class="col-sm-auto align-self-center">
+										<a class="menuzord-brand site-brand" href="index.html">
+											<img class="logo-default logo-1x" src="images/logo.gif" alt="Logo" width="158" height="50">
+											<img class="logo-default logo-2x retina" src="images/logo.gif" alt="Logo" width="316" height="100">
+										</a>
+									</div>
+									<div class="col-sm-auto ml-auto pr-0 align-self-center">
+										<nav id="top-primary-nav" class="menuzord green" data-effect="fade" data-animation="none" data-align="right">
+											<ul id="main-nav" class="menuzord-menu">
+												<li class="active"><a href="index.html">Home</a></li>
+												<li><a href="about.html">About</a></li>
+											
+												<li><a href="#">Media</a>
+													<ul class="dropdown">
+														<li><a href="gallery.html">Gallery</a></li>
+														<li><a href="team.html">Team</a></li>
+														<!--<li><a href="page-team-details.html">Team Details</a></li>-->
+													</ul>
+												</li>
+												<li><a href="#">Services</a>
+												<ul class="dropdown">
+														<li><a href="services.html">Our Services</a></li>
+														<li><a href="faq.html">FAQ</a></li>
+													</ul>
+												</li>
+												<li><a href="news.html">Blog</a>
+												<!--	<ul class="dropdown">
+														<li><a href="news-grid.html">News Grid</a></li>
+														<li><a href="news-details.html">News Details</a></li>
+													</ul>-->
+												</li>
+												<li><a href="contact.html">Contact</a></li>
+												<li> <a href="https://itservicesfreetown.com/forum/" target="_blank">Join Our Community</a><div class="notification-dot"></div></li>
+
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="row d-block d-xl-none">
+									 <div class="col-12">
+										<nav style="color:#040e40;" id="top-primary-nav-clone" class="menuzord d-block d-xl-none default menuzord-color-default menuzord-border-boxed menuzord-responsive" data-effect="slide" data-animation="none" data-align="right">
+										 <ul id="main-nav-clone" class="menuzord-menu menuzord-right menuzord-indented scrollable">
+										 </ul>
+										</nav>
+									 </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<!-- Start main-content -->
+	<div class="main-content">
+		<!-- Section: home -->
+		<section class="page-title divider layer-overlay overlay-dark-8 section-typo-light bg-img-center" data-tm-bg-img="images/faq-banner.jpg"><img src="" alt="">
+			<div class="container pt-90 pb-90">
+				<!-- Section Content -->
+				<div class="section-content">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h2 class="title">Frequently Asked Questions</h2>
+							<nav role="navigation" class="breadcrumb-trail breadcrumbs">
+								<div class="breadcrumbs">
+									<!-- <span class="trail-item trail-begin">
+										<a href="#"><span>Home</span></a>
+									</span>
+									<span><i class="fa fa-angle-right"></i></span>
+									<span class="trail-item"><a href="#"><span>Pages</span></a></span>
+									<span><i class="fa fa-angle-right"></i></span>
+									<span class="trail-item trail-end active">Contact</span> -->
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section: Contact Form -->
+
+
+        <section id="contact" class="bg-white-f4">
+            <div class="container">
+                <div class="section-content">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <div class="section-title">
+                                <h2 style="text-align: center;">FA<strong style="color:red;">Q</strong></h2>
+                                <p style="color:#040e40">Welcome to the FAQ section. Here, we address some common questions you might have about our services and how we can assist you with your computer-related needs. If you don't find the information you're looking for, please feel free to contact us directly. Click to expand below questions to display answers accordingly.</p>
+                            </div>
+        
+                            <ul id="accordion">
+                                <li>
+                                    <label for="first" style="font-weight: bold;">What services does IT Services Freetown offer?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="first" checked>
+                                    <div class="content">
+                                        <p>We offers a wide range of services, including but not limited to:
+                                            <ul class="list-unstyled mb-20">
+                                                <li style="color:white;"><i class="fa fa-check-circle text-theme-colored2 mr-10"></i> Laptop and Desktop repair service</li>
+                                                <li style="color:white;"><i class="fa fa-check-circle text-theme-colored2 mr-10"></i>Mobile Repair service</li>
+                                                <li style="color:white;"><i class="fa fa-check-circle text-theme-colored2 mr-10"></i>Web Developement</li>
+                                                <li style="color:white;"><i class="fa fa-check-circle text-theme-colored2 mr-10"></i>Graphic Design</li>
+                                                <li style="color:white;"><i class="fa fa-check-circle text-theme-colored2 mr-10"></i>Networking</li>
+                                                <li style="color:white;""><i class="fa fa-check-circle text-theme-colored2 mr-10"></i>POS software installation</li>
+                                                <li style="color:white;"><i class="fa fa-check-circle text-theme-colored2 mr-10"></i>Event decor, & cake making</li>
+                                            </ul>                                       
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="second" style="font-weight: bold;">How do I request a repair or service? <span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="second">
+                                    <div class="content">
+                                        
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>You can request a repair or service by visiting our shop in person during business hours or by contacting us via <a href="tel:+23233399391" style="color: red;">phone</a>, <a href="mailto:support@itservicesfreetown.com" style="color: red;">email</a> or fill out our contact form <a href="contact.html" style="color: red;">here</a>. Our friendly staff will guide you through the process and provide you with all the necessary details.</li></ul>
+                                      
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="third" style="font-weight: bold;">Do I need to make an appointment for computer repair services? <span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="third">
+                                    <div class="content">
+
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>In most cases appointments are not required, but for your convinience, we recommend scheduling one if you want to ensure prompt service. Walk-ins are also welcome, but appointments help us allocate time specifically for your repair needs. Simply fill out our contact form <a href="contact.html" style="color: red;">here</a></li></ul>
+                                   
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="forth" style="font-weight: bold;">How long does a typical repair take? <span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="forth">
+                                    <div class="content">
+                                      
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>The time required for a repair can vary depending on the issue. Minor software problems may be resolved within a few hours, while more complex hardware repairs might take longer. Our technicians will provide you with an estimated turnaround time when you bring in your device.</li></ul>
+                                      
+
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="fifth" style="font-weight: bold;">How much your repair will cost? <span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="fifth">
+                                    <div class="content">
+                                     
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>Our repair cost vary based on the specific service or repair needed. We offer competitive and transparent pricing. You can inquire about the cost of a particular service by reaching out to us directly.</li></ul>
+                                       
+                                    
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="sixth" style="font-weight: bold;">Can you help with both Windows and Mac computers? <span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="sixth">
+                                    <div class="content">
+                                      
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>Yes, we have expertise in repairing both Windows and Mac computers. Our skilled technicians are well-versed in working with various operating systems and hardware configurations.</li></ul>
+                                     
+                                       
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="seventh" style="font-weight: bold;">Is my data safe during the repair process?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="seventh">
+                                    <div class="content">
+                                      
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>We take data security seriously. While we make every effort to preserve your data, we recommend backing up your important files before bringing in your device for repair. We also offer data recovery services in case of unexpected data loss.</li></ul>
+                                       
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="eight" style="font-weight: bold;">Do you offer on-site repair services?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="eight">
+                                    <div class="content">
+                                        
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>Yes, we provide repair services at your desired location. It could be at your house, office or even on the beach😎. Also, for specific situations, such as network setup or troubleshooting, we also offer on-site services. Please contact us for more information.</li></ul>
+                                      
+                                       
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="nine" style="font-weight: bold;">What if my device cannot be repaired?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="nine">
+                                    <div class="content">
+                                       
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>In cases where a device is beyond repair or if repairing it would not be cost-effective, our technicians will provide you with honest advice and potential solutions. We can also assist you in selecting a replacement or upgrading your equipment.</li></ul>
+                                      
+                                        
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="ten" style="font-weight: bold;">Do you offer warranty on repairs?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="ten">
+                                    <div class="content">
+                                       
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>Yes, we provide a warranty on our repair services. The warranty duration varies depending on the type of repair or service performed. Our technicians will provide you with warranty details when you bring in your device.</li></ul>
+                                      
+                                       
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="eleven" style="font-weight: bold;">What are the key technologies used for your web development?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="eleven">
+                                    <div class="content">
+                                      
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>Key technologies we use include HTML, CSS, JavaScript, backend programming languages (such as Python, Ruby, PHP, or Node.js), databases (MySQL, PostgreSQL, MongoDB), and frameworks (React, Angular, Vue, Django, Ruby on Rails).</li></ul>
+                                        
+                                       
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="twelve" style="font-weight: bold;">What is POS software?<span>&#x3e;</span></label>
+                                    <input type="radio" name="accordion" id="twelve">
+                                    <div class="content">
+                                      
+                                            <ul>
+                                            <li style="color:white;"><i class=""></i>POS (Point of Sale) software is a system used by businesses to manage sales transactions, track inventory, process payments, and generate reports. POS systems streamline operations, improve accuracy, enable better inventory management, offer insights into sales trends, and enhance customer experience.</li></ul>
+                                            
+                                       
+                                        
+                                    </div>
+                                </li>                            
+                            </ul>
+                            <p style="color: #040e40;">If you haven't found an answer to the question you want to ask, kindly leave us a message and we would be happy to answer your question. Click <a href="contact.html" style="color: red;">HERE</a> to get started.<p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+	<!-- End Divider -->
+
+		<!-- Section: Contact -->
+		<section>
+			<div class="container-fluid pt-0 pb-0">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=2600&amp;height=600&amp;hl=en&amp;q=IT Services Freetown, Sierra Leone&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://thepasswordgame.com/">Computer Repair</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:600px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:600px;}.gmap_iframe {height:600px!important;}</style></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- end main-content -->
+	
+	<!-- Footer -->
+<footer id="footer" class="footer">
+		<div class="footer-widget-area">
+			<div class="container pt-90 pb-60">
+				<div class="row">
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="tm_widget_contact_info-1" class="split-nav-menu clearfix widget widget-contact-info clearfix mb-20">
+							<div class="tm-widget tm-widget-contact-info contact-info contact-info-style1  contact-icon-theme-colored1">
+								<div class="thumb">
+									<img alt="Logo" src="images/logo-white-bg.png">
+								</div>
+								<div class="description">West Freetown, Sierra Leone</div>
+							</div>
+						</div>
+						<div id="tm_widget_social_list_custom-1" class="split-nav-menu clearfix widget widget-social-list-custom clearfix">
+							<ul class="tm-widget tm-widget-social-list tm-widget-social-list-custom styled-icons  icon-dark  icon-rounded icon-theme-colored1 ">
+								<li><a class="social-link" href="#" ><i class="fa fa-facebook"></i></a></li>
+								<li><a class="social-link" href="#" ><i class="fa fa-twitter"></i></a></li>
+								<li><a class="social-link" href="#" ><i class="fa fa-youtube"></i></a></li>
+								<li><a class="social-link" href="#" ><i class="fa fa-instagram"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="tm_widget_blog_list-1" class="split-nav-menu clearfix widget widget-blog-list clearfix">
+							<h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored1">Latest News</h4>
+							<div class="tm-widget tm-widget-blog-list "> 
+								<!-- the loop -->
+								<article class="post media-post clearfix"> <a class="post-thumb" href="#"><img width="100" height="70" src="http://placehold.it/672x448" class="" alt="" /></a>
+									<div class="post-right">
+										<h6 class="post-title"> <a href="#"> Customer Focused </a> </h6>
+										<span class="post-date">
+										<time class="entry-date" datetime="2019-05-15T06:10:26+00:00">April 15, 2019</time>
+										</span> 
+									</div>
+								</article>
+								<article class="post media-post clearfix"> <a class="post-thumb" href="#"><img width="100" height="70" src="http://placehold.it/672x448" class="" alt="" /></a>
+									<div class="post-right">
+										<h6 class="post-title"> <a href="#"> POS System Software </a> </h6>
+										<span class="post-date">
+										<time class="entry-date" datetime="2019-07-15T06:10:26+00:00">June 15, 2019</time>
+										</span> 
+									</div>
+								</article>
+								<article class="post media-post clearfix"> <a class="post-thumb" href="#"><img width="100" height="70" src="http://placehold.it/672x448" class="" alt="" /></a>
+									<div class="post-right">
+										<h6 class="post-title"> <a href="#"> New tech on LCD </a> </h6>
+										<span class="post-date">
+										<time class="entry-date" datetime="2019-09-15T06:10:26+00:00">November 15, 2019</time>
+										</span> 
+									</div>
+								</article>
+								<!-- end of the loop --> 
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="nav_menu-1" class="widget widget_nav_menu">
+							<h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored1">Services</h4>
+							<div class="menu-service-nav-menu-container">
+								<ul id="menu-service-nav-menu" class="menu">
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20545"><a href="#services">Laptop Repair</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20546"><a href="#services">Desktop Repair</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20547"><a href="#services">Data Recovery</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20548"><a href="#services">Phone Unock</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20549"><a href="#services/">Mobile Repair</a></li>
+									<li class="menu-item menu-item-type-post_type menu-item-object-services menu-item-20550"><a href="#services">and more</a></li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 col-xl-3">
+						<div id="tm_widget_opening_hours_compressed-1" class="split-nav-menu clearfix widget widget-opening-hours-compressed clearfix">
+							<h4 class="widget-title widget-title-line-bottom line-bottom-footer-widget line-bottom-theme-colored1">Opening Hours</h4>
+							<ul class="tm-widget tm-widget-opening-hours tm-widget-opening-hours-compressed opening-hours border-dark">
+								<li class="clearfix"> <span>Monday - Saturday</span>
+									<div class="value">08.00 - 18.00</div>
+								</li>
+								<li class="clearfix"> <span>Wednesday</span>
+									<div class="value">08.00 - 18.00</div>
+								</li>
+								<li class="clearfix"> <span>Thursday - Friday</span>
+									<div class="value">08.00 - 18.00</div>
+								</li>
+								<li class="clearfix"> <span>Saturday</span>
+									<div class="value">08.00 - 17.00</div>
+								</li>
+								<li class="clearfix"> <span>Sunday</span>
+									<div class="value">Closed</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom" img="" alt="" src="images/bg1.jpg">
+				<div class="container">
+					<div class="row pt-20 pb-20">
+						<div class="col-sm-6">
+							<div class="footer-paragraph">
+								<p style="text-align: center; color: white;"> &copy;2023 IT Services Freetown. All Rights Reserved.</p>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="footer-paragraph text-right">
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
+<!-- end wrapper -->
+
+<!-- Footer Scripts -->
+<!-- JS | Custom script for all pages -->
+<script src="assets/dist/js/custom.js"></script>
+ 
+<script>
+        
+        
+  
+</script>
+
+</body>
+</html>
